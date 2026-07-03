@@ -1,0 +1,13 @@
+{
+  "title": "F-Sweep：给容器界面加一个顺手按钮",
+  "tags": [
+    "Minecraft",
+    "Java",
+    "NeoForge"
+  ],
+  "date": "2026-02-28T01:09:14Z",
+  "summary": "一个 Minecraft 1.21.1 NeoForge 模组，为容器界面增加一键存入网络的操作。",
+  "cover": "/images/project/f-sweep.svg",
+  "hidden": false,
+  "category": "Minecraft"
+}

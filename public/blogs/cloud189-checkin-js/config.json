@@ -1,0 +1,13 @@
+{
+  "title": "Cloud189CheckinJs：把天翼云盘签到变成自动流程",
+  "tags": [
+    "JavaScript",
+    "GitHub Actions",
+    "自动化"
+  ],
+  "date": "2026-06-27T13:32:10Z",
+  "summary": "从手动点签到到 Actions 自动运行，整理多推送渠道、账号配置和脚本运行边界。",
+  "cover": "/images/project/cloud189-checkin.svg",
+  "hidden": false,
+  "category": "自动化"
+}
