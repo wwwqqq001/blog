@@ -1,5 +1,19 @@
 [
   {
+    "slug": "project-portfolio",
+    "title": "项目作品集",
+    "tags": [
+      "项目",
+      "Cloudflare",
+      "Minecraft"
+    ],
+    "date": "2026-07-04T00:10",
+    "summary": "整理 Cloudflare 自动化、Minecraft 模组和个人工具项目，作为这个博客的作品集入口。",
+    "cover": "/images/project/beyond-storage-addon-all.svg",
+    "hidden": false,
+    "category": "项目"
+  },
+  {
     "slug": "dev-summary",
     "title": "开发总结",
     "tags": [
