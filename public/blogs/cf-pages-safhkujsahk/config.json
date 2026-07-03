@@ -1,0 +1,12 @@
+{
+  "title": "safhkujsahk：Cloudflare Pages 上的终端风格入口",
+  "date": "2026-01-04T00:00:00Z",
+  "tags": [
+    "Cloudflare Pages",
+    "Terminal UI",
+    "Web 前端"
+  ],
+  "summary": "一个部署在 Cloudflare Pages 上的终端风格页面，用命令行语气承载输入提示和连接入口。",
+  "cover": "/blogs/cf-pages-safhkujsahk/screenshot.png",
+  "category": "Cloudflare"
+}

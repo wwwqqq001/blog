@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="760" viewBox="0 0 900 760" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub Cron 页面截图展示</title>
+  <desc id="desc">在宽版画布中展示 GitHub Cron 的移动端首屏截图。</desc>
+  <rect width="900" height="760" rx="28" fill="#0b0f19"/>
+  <circle cx="108" cy="96" r="36" fill="#1f2937"/>
+  <circle cx="792" cy="96" r="36" fill="#1f2937"/>
+  <text x="80" y="112" fill="#e5e7eb" font-size="28" font-weight="700" font-family="Arial, sans-serif">GitHub Cron</text>
+  <text x="80" y="150" fill="#94a3b8" font-size="18" font-family="Arial, sans-serif">Cloudflare Pages 上的 Actions 触发入口</text>
+  <rect x="280" y="58" width="340" height="640" rx="26" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <rect x="304" y="86" width="292" height="584" rx="22" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+  <rect x="334" y="248" width="232" height="190" rx="12" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="306" text-anchor="middle" fill="#f8fafc" font-size="28" font-weight="700" font-family="Arial, sans-serif">GitHub Cron</text>
+  <text x="450" y="340" text-anchor="middle" fill="#94a3b8" font-size="16" font-family="Arial, sans-serif">定时触发 GitHub Actions</text>
+  <rect x="364" y="370" width="172" height="38" rx="6" fill="#0b0f19" stroke="#334155"/>
+  <text x="450" y="394" text-anchor="middle" fill="#64748b" font-size="14" font-family="Arial, sans-serif">请输入访问密码</text>
+  <rect x="364" y="424" width="172" height="42" rx="7" fill="#166534"/>
+  <text x="450" y="451" text-anchor="middle" fill="#dcfce7" font-size="16" font-weight="700" font-family="Arial, sans-serif">登录</text>
+  <text x="80" y="642" fill="#cbd5e1" font-size="18" font-family="Arial, sans-serif">根据公开运行站点首屏整理：登录入口清晰，任务控制动作与公开页面隔离。</text>
+</svg>

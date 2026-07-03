@@ -1,0 +1,12 @@
+{
+  "title": "GitHub Cron：运行在 Cloudflare Pages 的 Actions 触发器",
+  "date": "2026-07-02T00:00:00Z",
+  "tags": [
+    "Cloudflare Pages",
+    "GitHub Actions",
+    "Web 前端"
+  ],
+  "summary": "一个部署在 Cloudflare Pages 上的轻量前端，用来把定时任务入口和 GitHub Actions 触发流程整理到一个页面里。",
+  "cover": "/blogs/cf-pages-github-cron/screenshot-framed.svg",
+  "category": "Cloudflare"
+}
