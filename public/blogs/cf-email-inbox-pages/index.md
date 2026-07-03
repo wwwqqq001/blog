@@ -8,6 +8,12 @@
 
 它的定位不是完整后端，而是把邮件管理工具的展示层拆出来，用 GitHub Pages 发布。
 
+![cf-email-inbox-pages 前端交互流程](/blogs/cf-email-inbox-pages/ui-flow.svg)
+
+图里展示的是这个静态前端的完整交互边界：用户在浏览器中填入 API 地址和 Bearer Token，页面请求 Cloudflare Worker 邮件接口，再把邮件列表和详情渲染出来。Token 留在本地浏览器，不进入仓库，也不需要后端代理。
+
+这个项目适合用图说明，因为它的工程价值来自“拆分得足够轻”。静态页面只做展示和请求编排，Cloudflare Worker 承担邮件 API，GitHub Pages 只负责发布，这样维护成本很低，安全边界也比较清楚。
+
 ## 项目目标
 
 页面打开后，用户填入 Worker API Base URL 和 Bearer Token，就可以读取邮件列表和详情。

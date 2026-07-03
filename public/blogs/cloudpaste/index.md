@@ -6,6 +6,12 @@
 
 CloudPaste 是一个 Serverless 文件管理与 Markdown 分享工具。这个仓库是 fork，我把它放进作品集，不是为了说它完全由我从零实现，而是记录一次 Cloudflare 自托管工具的研究和实践。
 
+![CloudPaste 存储与分享结构图](/blogs/cloudpaste/storage.svg)
+
+这张图把 CloudPaste 看成一个“入口统一、存储可替换”的文件工具：前端负责管理体验，Worker 负责 API 和权限，D1 保存元数据，R2/S3/WebDAV 等存储承接真实文件。它比单纯贴 README 更直观，因为 CloudPaste 的价值正是在这些组件之间建立清晰边界。
+
+对作品集来说，这篇文章需要明确它是 fork 和自托管实践。图示也保持这个定位：它不宣称我重写了整个系统，而是说明我研究的是部署形态、存储抽象、Cloudflare 约束和后续可改造方向。
+
 ## 为什么关注它
 
 我想要的是一个轻量的文件管理工具：

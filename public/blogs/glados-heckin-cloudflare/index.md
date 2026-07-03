@@ -8,6 +8,12 @@
 
 我把它看成一个“小型边缘定时任务”实验：不需要服务器，不需要常驻进程，不需要自己维护 crontab，只要把核心逻辑放进 Worker，再让 Cloudflare Cron 定时触发。
 
+![GLaDOS Cloudflare Workers 架构图](/blogs/glados-heckin-cloudflare/architecture.svg)
+
+图里展示的是这个项目的核心边界：外部触发可以来自 Cron，也可以来自手动请求；真正执行业务的是 Worker 里的 Python 入口；敏感配置交给 Cloudflare Secrets；最后通过企业微信机器人把运行结果推送出来。
+
+这类项目的重点不是“部署了一个页面”，而是把短任务压缩到边缘环境里。图示能帮助读者快速看出它没有传统服务器、没有常驻进程，也没有把 Cookie 或 Webhook 写进仓库。
+
 ## 项目定位
 
 这个项目解决的是一件固定频率的小任务：

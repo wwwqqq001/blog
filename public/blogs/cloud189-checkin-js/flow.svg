@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Cloud189CheckinJs 自动签到流程图</title>
+  <desc id="desc">展示 GitHub Actions 定时触发脚本、读取安全配置、执行天翼云盘签到并发送通知的流程。</desc>
+  <rect width="960" height="520" rx="32" fill="#fff7ed"/>
+  <text x="64" y="72" fill="#111827" font-size="34" font-family="Arial, sans-serif" font-weight="700">Cloud189CheckinJs 自动化链路</text>
+  <text x="64" y="112" fill="#9a3412" font-size="18" font-family="Arial, sans-serif">把每天重复的签到动作交给定时任务，同时把凭据和通知分层管理。</text>
+  <g font-family="Arial, sans-serif" font-size="20" font-weight="700">
+    <rect x="70" y="178" width="180" height="92" rx="18" fill="#fed7aa"/>
+    <text x="114" y="216" fill="#111827">GitHub</text>
+    <text x="108" y="246" fill="#111827">Actions</text>
+    <rect x="300" y="178" width="180" height="92" rx="18" fill="#fdba74"/>
+    <text x="342" y="216" fill="#111827">读取环境</text>
+    <text x="356" y="246" fill="#111827">变量</text>
+    <rect x="530" y="178" width="180" height="92" rx="18" fill="#fb923c"/>
+    <text x="568" y="216" fill="#111827">执行签到</text>
+    <text x="568" y="246" fill="#111827">与重试</text>
+    <rect x="740" y="178" width="150" height="92" rx="18" fill="#ea580c"/>
+    <text x="774" y="216" fill="#fff7ed">推送</text>
+    <text x="764" y="246" fill="#fff7ed">结果</text>
+  </g>
+  <g stroke="#9a3412" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M250 224h50"/>
+    <path d="M290 212l12 12-12 12"/>
+    <path d="M480 224h50"/>
+    <path d="M520 212l12 12-12 12"/>
+    <path d="M710 224h30"/>
+    <path d="M730 212l12 12-12 12"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="17" fill="#7c2d12">
+    <text x="78" y="336">关键点</text>
+    <text x="78" y="370">1. 账号配置不写死在源码里。</text>
+    <text x="78" y="402">2. 本地运行和 Actions 定时运行共用一套核心逻辑。</text>
+    <text x="78" y="434">3. 推送渠道可替换，失败时能被及时发现。</text>
+  </g>
+  <rect x="606" y="330" width="270" height="92" rx="18" fill="#ffedd5" stroke="#fb923c" stroke-width="3"/>
+  <text x="636" y="366" fill="#111827" font-size="19" font-family="Arial, sans-serif" font-weight="700">安全边界</text>
+  <text x="636" y="396" fill="#9a3412" font-size="16" font-family="Arial, sans-serif">文章只讲流程，不展示账号、</text>
+  <text x="636" y="420" fill="#9a3412" font-size="16" font-family="Arial, sans-serif">Token、Webhook 或环境变量值。</text>
+</svg>

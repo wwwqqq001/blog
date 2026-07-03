@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">F-Sweep 容器交互流程图</title>
+  <desc id="desc">展示玩家打开容器、点击按钮或按快捷键、客户端发送请求、服务端执行槽位策略并返回提示。</desc>
+  <rect width="960" height="520" rx="32" fill="#f0fdf4"/>
+  <text x="64" y="72" fill="#052e16" font-size="34" font-family="Arial, sans-serif" font-weight="700">F-Sweep 一键存入交互</text>
+  <text x="64" y="112" fill="#166534" font-size="18" font-family="Arial, sans-serif">小按钮背后要处理客户端界面、网络包、槽位过滤和服务端反馈。</text>
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="700">
+    <rect x="70" y="168" width="170" height="92" rx="18" fill="#bbf7d0"/>
+    <text x="112" y="207" fill="#052e16">打开容器</text>
+    <text x="104" y="235" fill="#052e16">箱子 / 机器</text>
+    <rect x="292" y="168" width="170" height="92" rx="18" fill="#86efac"/>
+    <text x="320" y="207" fill="#052e16">按钮 / F 键</text>
+    <text x="326" y="235" fill="#052e16">触发请求</text>
+    <rect x="514" y="168" width="170" height="92" rx="18" fill="#4ade80"/>
+    <text x="550" y="207" fill="#052e16">服务端</text>
+    <text x="540" y="235" fill="#052e16">槽位策略</text>
+    <rect x="736" y="168" width="154" height="92" rx="18" fill="#16a34a"/>
+    <text x="778" y="207" fill="#f0fdf4">返回</text>
+    <text x="760" y="235" fill="#f0fdf4">屏幕提示</text>
+  </g>
+  <g stroke="#166534" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M240 214h52"/>
+    <path d="M280 202l14 12-14 12"/>
+    <path d="M462 214h52"/>
+    <path d="M502 202l14 12-14 12"/>
+    <path d="M684 214h52"/>
+    <path d="M724 202l14 12-14 12"/>
+  </g>
+  <rect x="130" y="344" width="700" height="92" rx="20" fill="#dcfce7" stroke="#22c55e" stroke-width="3"/>
+  <text x="164" y="382" fill="#052e16" font-size="20" font-family="Arial, sans-serif" font-weight="700">边界处理</text>
+  <text x="164" y="414" fill="#166534" font-size="17" font-family="Arial, sans-serif">跳过玩家背包、结果槽和不应转移槽位；成功、已满、无可转移物品都要有明确反馈。</text>
+</svg>

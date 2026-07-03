@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Rainyun 容器化自动签到流程图</title>
+  <desc id="desc">展示 Docker 环境中 Selenium 打开页面、识别验证码、执行签到、截图留证和推送结果的流程。</desc>
+  <rect width="960" height="520" rx="32" fill="#ecfeff"/>
+  <text x="64" y="72" fill="#0f172a" font-size="34" font-family="Arial, sans-serif" font-weight="700">Rainyun 浏览器自动化流程</text>
+  <text x="64" y="112" fill="#155e75" font-size="18" font-family="Arial, sans-serif">把依赖复杂的浏览器环境放进容器，用截图和通知保证任务可观察。</text>
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="700">
+    <rect x="70" y="172" width="170" height="88" rx="18" fill="#bae6fd"/>
+    <text x="116" y="210" fill="#0f172a">Docker</text>
+    <text x="106" y="238" fill="#0f172a">运行环境</text>
+    <rect x="290" y="172" width="170" height="88" rx="18" fill="#67e8f9"/>
+    <text x="330" y="210" fill="#0f172a">Selenium</text>
+    <text x="330" y="238" fill="#0f172a">打开页面</text>
+    <rect x="510" y="172" width="170" height="88" rx="18" fill="#22d3ee"/>
+    <text x="558" y="210" fill="#0f172a">验证码</text>
+    <text x="548" y="238" fill="#0f172a">识别重试</text>
+    <rect x="730" y="172" width="160" height="88" rx="18" fill="#0891b2"/>
+    <text x="768" y="210" fill="#ecfeff">签到</text>
+    <text x="758" y="238" fill="#ecfeff">并截图</text>
+  </g>
+  <g stroke="#155e75" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M240 216h50"/>
+    <path d="M278 204l14 12-14 12"/>
+    <path d="M460 216h50"/>
+    <path d="M498 204l14 12-14 12"/>
+    <path d="M680 216h50"/>
+    <path d="M718 204l14 12-14 12"/>
+  </g>
+  <rect x="120" y="336" width="720" height="92" rx="20" fill="#cffafe" stroke="#06b6d4" stroke-width="3"/>
+  <text x="154" y="374" fill="#0f172a" font-size="20" font-family="Arial, sans-serif" font-weight="700">可观察性</text>
+  <text x="154" y="406" fill="#155e75" font-size="17" font-family="Arial, sans-serif">自动化失败时，截图比日志更快说明问题：页面改版、验证码未过、按钮未命中、接口异常。</text>
+</svg>

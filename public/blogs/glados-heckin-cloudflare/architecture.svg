@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">GLaDOS Heckin Cloudflare 架构图</title>
+  <desc id="desc">展示浏览器手动触发、Cloudflare Cron、Workers Python、Secrets、GLaDOS API 和企业微信推送之间的关系。</desc>
+  <rect width="960" height="520" rx="32" fill="#fffbeb"/>
+  <text x="64" y="72" fill="#111827" font-size="34" font-family="Arial, sans-serif" font-weight="700">Workers Python 定时签到架构</text>
+  <text x="64" y="112" fill="#92400e" font-size="18" font-family="Arial, sans-serif">一个短任务服务：Cron 触发、Secrets 存密钥、Worker 执行、通知返回结果。</text>
+  <g font-family="Arial, sans-serif" font-size="19" font-weight="700">
+    <rect x="74" y="176" width="190" height="80" rx="18" fill="#fde68a"/>
+    <text x="112" y="224" fill="#111827">Cron 定时器</text>
+    <rect x="74" y="304" width="190" height="80" rx="18" fill="#fef3c7"/>
+    <text x="112" y="352" fill="#111827">手动触发</text>
+    <rect x="346" y="218" width="230" height="112" rx="22" fill="#f97316"/>
+    <text x="384" y="260" fill="#fff7ed">Cloudflare</text>
+    <text x="384" y="292" fill="#fff7ed">Workers Python</text>
+    <rect x="650" y="154" width="210" height="80" rx="18" fill="#fed7aa"/>
+    <text x="692" y="203" fill="#111827">Secrets / Vars</text>
+    <rect x="650" y="274" width="210" height="80" rx="18" fill="#fdba74"/>
+    <text x="704" y="322" fill="#111827">GLaDOS API</text>
+    <rect x="650" y="394" width="210" height="80" rx="18" fill="#ea580c"/>
+    <text x="704" y="442" fill="#fff7ed">企业微信推送</text>
+  </g>
+  <g stroke="#92400e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M264 216h82"/>
+    <path d="M334 204l14 12-14 12"/>
+    <path d="M264 344c52 0 52-70 82-70"/>
+    <path d="M334 262l14 12-14 12"/>
+    <path d="M576 252c42-28 42-46 74-56"/>
+    <path d="M638 192l16 4-10 14"/>
+    <path d="M576 286h74"/>
+    <path d="M638 274l14 12-14 12"/>
+    <path d="M576 318c42 34 42 86 74 106"/>
+    <path d="M638 412l14 12-16 4"/>
+  </g>
+  <text x="80" y="456" fill="#92400e" font-size="17" font-family="Arial, sans-serif">适合短时、低状态、强通知需求的个人自动化任务。</text>
+</svg>

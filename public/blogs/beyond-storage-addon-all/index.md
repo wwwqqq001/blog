@@ -8,6 +8,12 @@
 
 它负责维护 Beyond Storage Addon 在多个 Minecraft、Forge、NeoForge 版本上的构建、发布和兼容记录。
 
+![Beyond Storage Addon 多版本发布矩阵](/blogs/beyond-storage-addon-all/release-matrix.svg)
+
+这张图把项目最难解释的部分可视化了：它不是一个单分支源码项目，而是围绕多个加载器和 Minecraft 版本维护发布矩阵。每个分支都对应不同的构建约束、依赖版本和发布产物，管理仓库负责把这些关系固定下来。
+
+对 Minecraft 模组来说，多版本维护经常比功能开发本身更消耗精力。图示能让读者一眼看到为什么需要 `VERSION_BRANCHES.md`、`BUILD_ALL.ps1` 和固定命名规则，也能看出这个项目的重点是发布治理，而不是单次功能演示。
+
 ## 项目目标
 
 Beyond Storage Addon 的核心功能是给 Beyond Dimensions 增加一个顺手的一键存入能力。

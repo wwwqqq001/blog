@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Beyond Storage Addon All 多版本发布矩阵</title>
+  <desc id="desc">展示主管理分支、多个发布 worktree、批量构建脚本和可发布 jar 的关系。</desc>
+  <rect width="960" height="520" rx="32" fill="#f8fafc"/>
+  <text x="64" y="72" fill="#111827" font-size="34" font-family="Arial, sans-serif" font-weight="700">多版本模组发布矩阵</text>
+  <text x="64" y="112" fill="#334155" font-size="18" font-family="Arial, sans-serif">一个管理仓库协调多个发布分支，避免不同 MC / Loader 版本互相污染。</text>
+  <rect x="70" y="178" width="210" height="96" rx="20" fill="#1e293b"/>
+  <text x="112" y="218" fill="#f8fafc" font-size="22" font-family="Arial, sans-serif" font-weight="700">main</text>
+  <text x="104" y="248" fill="#cbd5e1" font-size="16" font-family="Arial, sans-serif">管理文档 / 脚本</text>
+  <rect x="376" y="168" width="220" height="116" rx="20" fill="#dbeafe"/>
+  <text x="420" y="210" fill="#1e3a8a" font-size="21" font-family="Arial, sans-serif" font-weight="700">BUILD_ALL.ps1</text>
+  <text x="420" y="242" fill="#1e40af" font-size="16" font-family="Arial, sans-serif">批量构建所有 worktree</text>
+  <g font-family="Arial, sans-serif" font-size="15" font-weight="700">
+    <rect x="690" y="112" width="190" height="46" rx="12" fill="#bfdbfe"/>
+    <text x="724" y="141" fill="#172554">forge-1.20.1</text>
+    <rect x="690" y="174" width="190" height="46" rx="12" fill="#bfdbfe"/>
+    <text x="716" y="203" fill="#172554">neoforge-1.20.1</text>
+    <rect x="690" y="236" width="190" height="46" rx="12" fill="#bfdbfe"/>
+    <text x="716" y="265" fill="#172554">neoforge-1.21.1</text>
+    <rect x="690" y="298" width="190" height="46" rx="12" fill="#bfdbfe"/>
+    <text x="710" y="327" fill="#172554">neoforge-1.21.11</text>
+    <rect x="690" y="360" width="190" height="46" rx="12" fill="#bfdbfe"/>
+    <text x="724" y="389" fill="#172554">neoforge-26.1</text>
+    <rect x="690" y="422" width="190" height="46" rx="12" fill="#bfdbfe"/>
+    <text x="730" y="451" fill="#172554">neoforge-26.2</text>
+  </g>
+  <g stroke="#334155" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M280 226h96"/>
+    <path d="M364 214l14 12-14 12"/>
+    <path d="M596 226c42-60 50-90 94-91"/>
+    <path d="M596 226h94"/>
+    <path d="M596 226c42 60 50 90 94 95"/>
+    <path d="M596 226c38 124 50 156 94 157"/>
+  </g>
+  <text x="80" y="430" fill="#334155" font-size="17" font-family="Arial, sans-serif">每个发布分支独立构建，产物用 loader、Minecraft 版本和 addon 版本命名。</text>
+</svg>
