@@ -1,0 +1,12 @@
+{
+  "title": "asdqe：早期 Cloudflare Pages 部署记录",
+  "date": "2025-07-05T00:00:00Z",
+  "tags": [
+    "Cloudflare Pages",
+    "部署记录",
+    "归档"
+  ],
+  "summary": "一个保留在 Cloudflare Pages 项目列表里的早期站点，当前公开域名返回 404，适合作为部署历史和清理记录。",
+  "cover": "/blogs/cf-pages-asdqe/status.svg",
+  "category": "Cloudflare"
+}

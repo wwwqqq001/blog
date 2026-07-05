@@ -2,13 +2,20 @@
 
 Cloudflare Pages：<https://github-cron.pages.dev>  
 状态：正在运行  
-来源：Cloudflare Pages 项目列表，最近更新约 2 天前
+来源：Cloudflare Pages 项目列表，最近更新约 3 天前
 
 GitHub Cron 是一个很小的 Web 前端，首屏只保留了最关键的信息：项目名、用途说明和登录入口。它的定位不是完整后台系统，而是把“定时触发 GitHub Actions”这个动作做成一个可以访问、可以管理、可以继续扩展的页面入口。
 
 ![GitHub Cron 首屏展示图](/blogs/cf-pages-github-cron/screenshot-framed.svg)
 
 这张展示图根据当前正在运行的 Cloudflare Pages 首屏整理，原始截图也保留在同目录作为素材。页面没有堆很多功能说明，而是直接告诉访问者它负责“定时触发 GitHub Actions”。这种表达适合工具类项目：先说明任务，再把登录或授权入口放出来，后续再根据身份展示更具体的配置。
+
+## 网站入口
+
+- 公开地址：<https://github-cron.pages.dev>
+- 最近部署：生产环境最近更新约 3 天前
+- 当前首屏：`GitHub Cron`、`定时触发 GitHub Actions`、登录入口
+- 展示方式：博客使用整理后的展示图，保留浏览器截图作为素材
 
 ## 为什么放进博客
 

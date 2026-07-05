@@ -14,6 +14,20 @@
     "category": "Cloudflare"
   },
   {
+    "slug": "cf-pages-ldcf0503",
+    "title": "ldcf0503：挂在 Cloudflare Pages 上的 nginx 入口",
+    "tags": [
+      "Cloudflare Pages",
+      "自定义域名",
+      "Web 前端"
+    ],
+    "date": "2026-05-05T00:00:00Z",
+    "summary": "一个部署在 Cloudflare Pages 的公开站点，同时绑定 pages.dev 域名和自定义域名，目前作为 nginx 默认页入口保留。",
+    "cover": "/blogs/cf-pages-ldcf0503/screenshot.png",
+    "hidden": false,
+    "category": "Cloudflare"
+  },
+  {
     "slug": "cloud189-checkin-js",
     "title": "Cloud189CheckinJs：把天翼云盘签到变成自动流程",
     "tags": [
@@ -122,6 +136,20 @@
     "date": "2026-01-04T00:00:00Z",
     "summary": "一个部署在 Cloudflare Pages 上的终端风格页面，用命令行语气承载输入提示和连接入口。",
     "cover": "/blogs/cf-pages-safhkujsahk/screenshot.png",
+    "hidden": false,
+    "category": "Cloudflare"
+  },
+  {
+    "slug": "cf-pages-asdqe",
+    "title": "asdqe：早期 Cloudflare Pages 部署记录",
+    "tags": [
+      "Cloudflare Pages",
+      "部署记录",
+      "归档"
+    ],
+    "date": "2025-07-05T00:00:00Z",
+    "summary": "一个保留在 Cloudflare Pages 项目列表里的早期站点，当前公开域名返回 404，适合作为部署历史和清理记录。",
+    "cover": "/blogs/cf-pages-asdqe/status.svg",
     "hidden": false,
     "category": "Cloudflare"
   }

@@ -1,0 +1,12 @@
+{
+  "title": "ldcf0503：挂在 Cloudflare Pages 上的 nginx 入口",
+  "date": "2026-05-05T00:00:00Z",
+  "tags": [
+    "Cloudflare Pages",
+    "自定义域名",
+    "Web 前端"
+  ],
+  "summary": "一个部署在 Cloudflare Pages 的公开站点，同时绑定 pages.dev 域名和自定义域名，目前作为 nginx 默认页入口保留。",
+  "cover": "/blogs/cf-pages-ldcf0503/screenshot.png",
+  "category": "Cloudflare"
+}

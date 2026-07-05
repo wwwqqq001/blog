@@ -1,5 +1,31 @@
 [
 	{
+		"name": "GitHub Cron",
+		"year": 2026,
+		"description": "部署在 Cloudflare Pages 上的 GitHub Actions 触发入口，用轻量登录页把公开访问和受控操作隔离开，适合承载定时任务控制台。",
+		"image": "/blogs/cf-pages-github-cron/screenshot-framed.svg",
+		"url": "https://github-cron.pages.dev",
+		"tags": [
+			"Cloudflare Pages",
+			"GitHub Actions",
+			"Web 前端",
+			"运行中"
+		]
+	},
+	{
+		"name": "ldcf0503",
+		"year": 2026,
+		"description": "部署在 Cloudflare Pages 的站点入口，已绑定 pages.dev 域名和自定义域名，目前展示 nginx 默认页，适合作为后续项目页面的占位入口。",
+		"image": "/blogs/cf-pages-ldcf0503/screenshot.png",
+		"url": "https://ldcf0503.pages.dev",
+		"tags": [
+			"Cloudflare Pages",
+			"自定义域名",
+			"占位页",
+			"运行中"
+		]
+	},
+	{
 		"name": "Beyond Storage Addon All",
 		"year": 2026,
 		"description": "Beyond Dimensions 附属模组的多版本发布管理仓库，使用多个发布分支和 worktree 维护 Forge / NeoForge 版本，并通过 PowerShell 脚本批量构建可发布 jar。",
@@ -88,6 +114,32 @@
 			"Storage",
 			"WebDAV",
 			"Fork"
+		]
+	},
+	{
+		"name": "safhkujsahk",
+		"year": 2026,
+		"description": "部署在 Cloudflare Pages 上的终端风格入口页，用命令行提示、多语言切换和连接命令组织首屏信息。",
+		"image": "/blogs/cf-pages-safhkujsahk/screenshot.png",
+		"url": "https://safhkujsahk.pages.dev",
+		"tags": [
+			"Cloudflare Pages",
+			"Terminal UI",
+			"Web 前端",
+			"运行中"
+		]
+	},
+	{
+		"name": "asdqe",
+		"year": 2025,
+		"description": "保留在 Cloudflare Pages 项目列表里的早期部署，当前公开域名返回 404，作为部署历史和待清理项目记录保存。",
+		"image": "/blogs/cf-pages-asdqe/status.svg",
+		"url": "https://asdqe.pages.dev",
+		"tags": [
+			"Cloudflare Pages",
+			"部署记录",
+			"归档",
+			"404"
 		]
 	}
 ]
