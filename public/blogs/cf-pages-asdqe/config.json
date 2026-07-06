@@ -6,7 +6,7 @@
     "部署记录",
     "归档"
   ],
-  "summary": "一个保留在 Cloudflare Pages 项目列表里的早期站点，当前公开域名返回 404，适合作为部署历史和清理记录。",
+  "summary": "保留在 Cloudflare Pages 项目列表中的早期部署，当前公开域名返回 404，作为归档和清理记录。",
   "cover": "/blogs/cf-pages-asdqe/status.svg",
   "category": "Cloudflare"
 }

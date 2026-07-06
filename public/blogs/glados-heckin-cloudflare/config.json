@@ -1,12 +1,12 @@
 {
-  "title": "GLaDOS Heckin Cloudflare：把签到任务放到边缘网络",
+  "title": "GLaDOS Heckin Cloudflare：把签到任务放进 Workers Cron",
   "tags": [
     "Cloudflare Workers",
     "Python",
     "Cron"
   ],
   "date": "2026-06-27T09:07:24Z",
-  "summary": "用 Cloudflare Workers Python、Cron 和 Secrets 做一个轻量的定时任务服务。",
+  "summary": "运行在 Cloudflare Workers Python 上的边缘定时任务，用 Cron 触发并通过 Secrets 管理敏感配置。",
   "cover": "/images/project/glados-cloudflare.svg",
   "hidden": false,
   "category": "Cloudflare"

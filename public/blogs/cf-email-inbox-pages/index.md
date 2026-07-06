@@ -1,69 +1,74 @@
-# cf-email-inbox-pages：邮件工具的静态前端
+# cf-email-inbox-pages：Cloudflare 邮件工具的静态前端
 
-创建时间：2026-03-16 20:22:10 UTC  
-仓库：<https://github.com/wwwqqq001/cf-email-inbox-pages>  
+创建时间：2026-03-16 20:22:10 UTC
+仓库：<https://github.com/wwwqqq001/cf-email-inbox-pages>
+部署位置：GitHub Pages
 状态：公开仓库
 
-这是一个很小但结构清楚的静态前端项目，用来连接 Cloudflare Worker 邮件 API。
-
-它的定位不是完整后端，而是把邮件管理工具的展示层拆出来，用 GitHub Pages 发布。
+cf-email-inbox-pages 是一个静态前端，用来连接 Cloudflare Worker 邮件 API。它不承担邮件后端逻辑，只负责让用户在浏览器里填写 API 地址和 Bearer Token，然后读取邮件列表与详情。
 
 ![cf-email-inbox-pages 前端交互流程](/blogs/cf-email-inbox-pages/ui-flow.svg)
 
-图里展示的是这个静态前端的完整交互边界：用户在浏览器中填入 API 地址和 Bearer Token，页面请求 Cloudflare Worker 邮件接口，再把邮件列表和详情渲染出来。Token 留在本地浏览器，不进入仓库，也不需要后端代理。
+图里展示的是它的边界：GitHub Pages 只托管静态文件，浏览器本地保存 Token，Cloudflare Worker 提供邮件接口。文章不展示真实 Token，也不展示任何私有邮件内容。
 
-这个项目适合用图说明，因为它的工程价值来自“拆分得足够轻”。静态页面只做展示和请求编排，Cloudflare Worker 承担邮件 API，GitHub Pages 只负责发布，这样维护成本很低，安全边界也比较清楚。
+## 快速了解
 
-## 项目目标
+| 项目项 | 内容 |
+| --- | --- |
+| 类型 | 静态前端 / Cloudflare 周边工具 |
+| 核心技术 | HTML、CSS、JavaScript、GitHub Pages |
+| 后端依赖 | Cloudflare Worker 邮件 API |
+| 凭据位置 | 浏览器本地输入并保存 |
+| 主要功能 | 邮件列表、邮件详情、API 地址配置 |
 
-页面打开后，用户填入 Worker API Base URL 和 Bearer Token，就可以读取邮件列表和详情。
+## 问题背景
 
-这个拆法有几个好处：
+Cloudflare 邮件工具如果只提供 API，日常查看会比较不顺手。为此我把展示层拆出来，做成一个不需要服务器的静态页面。
 
-- 前端可以完全静态发布。
-- 后端 Token 不进仓库。
-- 使用者可以自己填写 API 地址。
-- GitHub Actions 可以自动发布页面。
+这个拆法的重点是轻量：
 
-## 文件结构
+- 不引入复杂框架。
+- 不需要构建服务。
+- 不需要后端代理。
+- 使用者自己填写 API 地址和 Token。
 
-项目很克制：
+## 我做了什么
+
+项目结构很直接：
 
 - `index.html`：页面结构。
-- `styles.css`：界面样式。
-- `app.js`：请求 Worker API、管理 Token、渲染邮件列表。
-- `.github`：自动发布工作流。
+- `styles.css`：布局和界面样式。
+- `app.js`：读取配置、请求 Worker API、渲染邮件列表和详情。
+- `.github`：自动发布到 GitHub Pages。
 
-没有复杂框架，也不需要构建步骤。这个选择对一个工具型前端来说是合理的。
+这种写法适合小工具。它牺牲了一部分复杂工程能力，但换来低维护成本和更清晰的部署方式。
 
-## 安全边界
+## 为什么保持静态化
 
-我最看重的是 Token 的位置。
+Token 保存在浏览器本地，而不是放在仓库或静态页面源码里。这不是绝对安全的企业方案，但符合个人工具的定位：使用者自己控制 API 地址和访问凭据，前端只负责调用。
 
-Token 只由用户在浏览器里输入，并保存在本地 `localStorage`。仓库里不放 API Token，也不把 Token 写入页面源码。
+如果把 Token 放到远端代理里，确实可以隐藏浏览器侧凭据，但又会引入一个需要维护的后端。这个项目选择保持静态化。
 
-这不是绝对安全方案，但它符合这个项目的定位：个人工具、低维护、低成本、静态发布。
+## 页面打开后能做什么
 
-## 和 Cloudflare 的关系
+页面打开后，用户填写 Worker API Base URL 和 Bearer Token，就可以读取邮件列表，并在右侧查看邮件详情。发布层使用 GitHub Pages，后端仍由 Cloudflare Worker 承担。
 
-这个项目本身是 GitHub Pages，但它服务的是 Cloudflare Worker 后端。
+这种结构让项目边界很清楚：
 
-所以它属于“Cloudflare 周边工具”：
+- GitHub Pages：发布页面。
+- 浏览器：保存用户输入的配置。
+- Cloudflare Worker：提供邮件接口。
 
-- Cloudflare Worker 负责邮件 API。
-- 静态页面负责读取和展示。
-- 用户本地保存访问凭据。
+## 后续计划
 
-## 后续可以做什么
-
-如果继续完善，我会加：
+后续可以补这些能力：
 
 - 邮件搜索。
 - 多 API 地址配置。
 - Token 过期提示。
-- 错误状态更明确的空页面。
-- 移动端列表和详情切换。
+- 错误状态和空状态页面。
+- 移动端列表与详情切换。
 
-## 展示说明
+## 展示边界
 
-这是公开仓库，可以直接打开 GitHub 链接查看源码。
+这是公开仓库，可以查看源码。文章只展示前端结构和交互边界，不公开任何真实 Token、邮件内容、Worker 管理后台或私有 API 配置。

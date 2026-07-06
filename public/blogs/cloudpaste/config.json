@@ -1,12 +1,12 @@
 {
-  "title": "CloudPaste：一次 Cloudflare 自托管实践",
+  "title": "CloudPaste：一次 Cloudflare 文件工具自托管实践",
   "tags": [
     "Cloudflare",
     "R2",
     "WebDAV"
   ],
   "date": "2026-05-15T09:53:42Z",
-  "summary": "从文件管理、Markdown 分享、多存储聚合和 WebDAV 角度记录 CloudPaste 的部署与使用思路。",
+  "summary": "公开 fork 的 Cloudflare 文件工具自托管实践，梳理 Workers、D1、R2/S3 和 WebDAV 的边界。",
   "cover": "/images/project/cloudpaste.svg",
   "hidden": false,
   "category": "自托管"

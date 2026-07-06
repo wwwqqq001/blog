@@ -1,12 +1,12 @@
 {
-  "title": "cf-email-inbox-pages：邮件工具的静态前端",
+  "title": "cf-email-inbox-pages：Cloudflare 邮件工具的静态前端",
   "tags": [
     "JavaScript",
     "GitHub Pages",
     "Cloudflare"
   ],
   "date": "2026-03-16T20:22:10Z",
-  "summary": "把邮件管理的展示层拆成静态页面，连接 Worker API，并把 Token 留在浏览器本地。",
+  "summary": "部署在 GitHub Pages 的静态邮件前端，通过浏览器本地 Token 连接 Cloudflare Worker 邮件 API。",
   "cover": "/images/project/cf-email-inbox.svg",
   "hidden": false,
   "category": "Cloudflare"

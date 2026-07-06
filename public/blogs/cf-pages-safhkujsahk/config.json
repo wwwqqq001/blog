@@ -6,7 +6,7 @@
     "Terminal UI",
     "Web 前端"
   ],
-  "summary": "一个部署在 Cloudflare Pages 上的终端风格页面，用命令行语气承载输入提示和连接入口。",
+  "summary": "部署在 Cloudflare Pages 上的终端风格入口，用命令行提示、多语言入口和连接命令组织首屏。",
   "cover": "/blogs/cf-pages-safhkujsahk/screenshot.png",
   "category": "Cloudflare"
 }

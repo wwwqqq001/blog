@@ -1,12 +1,12 @@
 {
-  "title": "Beyond Storage Addon All：多版本模组发布管理",
+  "title": "Beyond Storage Addon All：管理 Minecraft 模组发布矩阵",
   "tags": [
     "Minecraft",
     "Forge",
     "NeoForge"
   ],
   "date": "2026-03-23T19:01:22Z",
-  "summary": "用一个管理仓库协调多个 Minecraft / Loader 发布分支，记录构建、兼容和发布流程。",
+  "summary": "用管理仓库协调多个 Minecraft、Forge 和 NeoForge 发布分支，固定构建脚本和产物命名规则。",
   "cover": "/images/project/beyond-storage-addon-all.svg",
   "hidden": false,
   "category": "Minecraft"

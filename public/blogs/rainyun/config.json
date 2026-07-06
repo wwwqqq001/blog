@@ -1,12 +1,12 @@
 {
-  "title": "Rainyun：容器化的雨云自动签到",
+  "title": "Rainyun：把网页签到封装成可复现的容器任务",
   "tags": [
     "Python",
     "Docker",
     "Selenium"
   ],
   "date": "2026-06-25T13:23:07Z",
-  "summary": "围绕 Selenium、ddddocr、Docker 和通知渠道，把不稳定的网页签到封装成可重复运行的任务。",
+  "summary": "用 Selenium、ddddocr 和 Docker 封装网页签到流程，保留截图、日志和通知以便排查失败。",
   "cover": "/images/project/rainyun.svg",
   "hidden": false,
   "category": "自动化"
