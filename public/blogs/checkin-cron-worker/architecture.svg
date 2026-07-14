@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 560" role="img" aria-labelledby="title desc">
+  <title id="title">签到调度平台架构图</title>
+  <desc id="desc">Cloudflare Cron 扫描 D1 任务，经 GitHub Actions 或 Service Binding 执行业务，再由 Webhook 回写结果并汇总日报。</desc>
+  <rect width="980" height="560" rx="32" fill="#eff6ff"/>
+  <text x="56" y="64" fill="#0f172a" font-size="32" font-family="Arial, sans-serif" font-weight="700">统一调度平台主链路</text>
+  <text x="56" y="100" fill="#1d4ed8" font-size="17" font-family="Arial, sans-serif">一个 Worker 同时承担调度、Webhook 聚合、日报与管理 API；业务脚本只回传结构化结果。</text>
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="700">
+    <rect x="56" y="150" width="180" height="78" rx="16" fill="#bfdbfe"/>
+    <text x="88" y="196" fill="#0f172a">Cron */5</text>
+    <rect x="290" y="140" width="220" height="98" rx="18" fill="#2563eb"/>
+    <text x="330" y="180" fill="#eff6ff">checkin-cron-worker</text>
+    <text x="330" y="208" fill="#dbeafe" font-size="15" font-weight="500">scheduled + fetch</text>
+    <rect x="570" y="120" width="170" height="70" rx="14" fill="#93c5fd"/>
+    <text x="600" y="162" fill="#0f172a">D1 状态库</text>
+    <rect x="570" y="210" width="170" height="70" rx="14" fill="#60a5fa"/>
+    <text x="592" y="252" fill="#0f172a">Admin / Wiki</text>
+    <rect x="80" y="320" width="200" height="78" rx="16" fill="#1e40af"/>
+    <text x="108" y="355" fill="#eff6ff">GitHub Actions</text>
+    <text x="108" y="380" fill="#bfdbfe" font-size="14" font-weight="500">复杂签到 / 续期</text>
+    <rect x="320" y="320" width="220" height="78" rx="16" fill="#1d4ed8"/>
+    <text x="350" y="355" fill="#eff6ff">业务 Workers</text>
+    <text x="350" y="380" fill="#bfdbfe" font-size="14" font-weight="500">Service Binding</text>
+    <rect x="580" y="320" width="200" height="78" rx="16" fill="#0ea5e9"/>
+    <text x="618" y="355" fill="#eff6ff">Webhook 回传</text>
+    <text x="618" y="380" fill="#e0f2fe" font-size="14" font-weight="500">结构化 payload</text>
+    <rect x="300" y="450" width="260" height="70" rx="16" fill="#0369a1"/>
+    <text x="340" y="492" fill="#eff6ff">企业微信日报 / 告警</text>
+  </g>
+  <g stroke="#1e3a8a" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M236 189h54"/>
+    <path d="M510 189h60"/>
+    <path d="M400 238v82"/>
+    <path d="M180 398v-40c0-40 80-40 110-40"/>
+    <path d="M430 398h150"/>
+    <path d="M680 398c20 40 20 40 -50 52"/>
+    <path d="M400 398v52"/>
+  </g>
+  <text x="56" y="540" fill="#1d4ed8" font-size="15" font-family="Arial, sans-serif">业务侧不直接推送通知；平台统一负责重试、去重和日报择优。</text>
+</svg>

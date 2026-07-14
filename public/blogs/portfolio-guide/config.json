@@ -1,0 +1,14 @@
+{
+  "title": "作品集导读：这些项目怎么读、怎么连在一起",
+  "tags": [
+    "作品集",
+    "Cloudflare",
+    "平台工程",
+    "导读"
+  ],
+  "date": "2026-07-14T12:00:00Z",
+  "summary": "作品集阅读地图：主线是统一调度平台，支线覆盖业务 Handler、算法工具和本地应用，并说明 AI 协作边界。",
+  "cover": "/images/project/portfolio-guide.svg",
+  "hidden": false,
+  "category": "平台工程"
+}

@@ -1,5 +1,5 @@
 {
 	"title": "关于本站",
-	"description": "一个基于 Github 的现代化博客系统",
-	"content": "📦网站基于 Github 仓库完全存储，所有内容版本可控\n\n🚀无后端，无 serverless function，纯静态站点\n\n✏️文章通过可视化 UI 直接编辑并提交到 Github 仓库\n\n🔑所有用户都可以编辑，提交需要 Owner 的 Private Key\n\n## 技术栈\n\n- Next.js\n- React\n- TypeScript\n- Tailwind CSS\n- Motion\n- Github API"
+	"description": "Otaku57 的项目作品集与工程复盘",
+	"content": "这里不是日记站，而是项目作品集。\n\n主线是 Cloudflare 上的统一任务调度平台，以及挂在它下面的业务 Handler；支线包括算法小工具、移动端小品和一些部署记录。\n\n## 怎么读\n\n- 先看《作品集导读》\n- 再看 checkin-cron-worker\n- 需要细节时再下钻业务文章\n\n## 工作方式\n\n项目实现大量使用 AI 辅助编码。我负责目标、架构边界、联调验收和线上运维。\n\n## 技术栈\n\n- 博客系统：Next.js / React / TypeScript / Tailwind\n- 内容：GitHub 仓库中的 Markdown + JSON 索引\n- 部署：可对接 Cloudflare Workers / 静态托管\n\n## 展示边界\n\n不公开真实 Cookie、Token、Webhook、账号和密钥。私有仓库链接若返回 404，属于预期。"
 }

@@ -1,13 +1,14 @@
 {
-  "title": "GLaDOS Heckin Cloudflare：把签到任务放进 Workers Cron",
+  "title": "GLaDOS Heckin Cloudflare：边缘签到 Handler 与兑换策略",
   "tags": [
     "Cloudflare Workers",
     "Python",
-    "Cron"
+    "自动化",
+    "策略"
   ],
   "date": "2026-06-27T09:07:24Z",
-  "summary": "运行在 Cloudflare Workers Python 上的边缘定时任务，用 Cron 触发并通过 Secrets 管理敏感配置。",
+  "summary": "Cloudflare Python Workers 上的 GLaDOS 业务 Handler，负责签到、积分流水解析和兑换策略，并回传统一平台。",
   "cover": "/images/project/glados-cloudflare.svg",
   "hidden": false,
-  "category": "Cloudflare"
+  "category": "自动化"
 }

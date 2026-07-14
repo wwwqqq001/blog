@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">米游社双端架构图</title>
+  <desc id="desc">桌面端扫码登录导出凭证，Cloudflare Worker 管理多账号并执行签到。</desc>
+  <rect width="960" height="520" rx="32" fill="#f5f3ff"/>
+  <text x="56" y="64" fill="#4c1d95" font-size="32" font-family="Arial, sans-serif" font-weight="700">桌面端 + 边缘 Worker</text>
+  <text x="56" y="100" fill="#6d28d9" font-size="17" font-family="Arial, sans-serif">登录与签到分离：本机完成扫码，云端负责多账号定时执行和结果回传。</text>
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="700">
+    <rect x="56" y="180" width="220" height="100" rx="18" fill="#c4b5fd"/>
+    <text x="100" y="228" fill="#4c1d95">Python 桌面端</text>
+    <text x="100" y="255" fill="#5b21b6" font-size="14" font-weight="500">扫码登录 / 导出</text>
+    <rect x="360" y="180" width="240" height="100" rx="18" fill="#7c3aed"/>
+    <text x="400" y="228" fill="#f5f3ff">hoyolab-checkin</text>
+    <text x="400" y="255" fill="#ede9fe" font-size="14" font-weight="500">TS Worker + 面板</text>
+    <rect x="680" y="150" width="200" height="70" rx="14" fill="#a78bfa"/>
+    <text x="730" y="192" fill="#4c1d95">KV 账号</text>
+    <rect x="680" y="250" width="200" height="70" rx="14" fill="#8b5cf6"/>
+    <text x="720" y="292" fill="#f5f3ff">游戏签到 API</text>
+    <rect x="300" y="360" width="320" height="80" rx="16" fill="#5b21b6"/>
+    <text x="360" y="408" fill="#f5f3ff">统一平台 Service Binding</text>
+  </g>
+  <g stroke="#5b21b6" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M276 230h84"/>
+    <path d="M600 230h80"/>
+    <path d="M480 280v80"/>
+  </g>
+</svg>

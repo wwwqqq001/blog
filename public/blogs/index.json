@@ -1,5 +1,50 @@
 [
   {
+    "slug": "portfolio-guide",
+    "title": "作品集导读：这些项目怎么读、怎么连在一起",
+    "tags": [
+      "作品集",
+      "Cloudflare",
+      "平台工程",
+      "导读"
+    ],
+    "date": "2026-07-14T12:00:00Z",
+    "summary": "作品集阅读地图：主线是统一调度平台，支线覆盖业务 Handler、算法工具和本地应用，并说明 AI 协作边界。",
+    "cover": "/images/project/portfolio-guide.svg",
+    "hidden": false,
+    "category": "平台工程"
+  },
+  {
+    "slug": "checkin-cron-worker",
+    "title": "checkin-cron-worker：把分散签到收成统一调度平台",
+    "tags": [
+      "Cloudflare Workers",
+      "TypeScript",
+      "D1",
+      "调度平台"
+    ],
+    "date": "2026-07-10T11:02:00Z",
+    "summary": "Cloudflare Workers 上的任务调度与 Webhook 聚合平台，用 D1 管理状态，把多业务结果汇总成企业微信日报。",
+    "cover": "/images/project/checkin-cron-worker.svg",
+    "hidden": false,
+    "category": "平台工程"
+  },
+  {
+    "slug": "hyper-checkin-cloudflare",
+    "title": "Hyperdown Workers：把签到做成可观测边缘服务",
+    "tags": [
+      "Cloudflare Workers",
+      "Python",
+      "KV",
+      "自动化"
+    ],
+    "date": "2026-07-05T11:38:00Z",
+    "summary": "运行在 Cloudflare Python Workers 上的 Hyperdown 签到 Handler，带可视化面板、KV 状态和平台标准回传。",
+    "cover": "/images/project/hyper-checkin.svg",
+    "hidden": false,
+    "category": "自动化"
+  },
+  {
     "slug": "cf-pages-github-cron",
     "title": "GitHub Cron：Cloudflare Pages 上的 Actions 触发入口",
     "tags": [
@@ -10,20 +55,6 @@
     "date": "2026-07-02T00:00:00Z",
     "summary": "部署在 Cloudflare Pages 上的轻量前端，用登录入口隔离公开页面和 GitHub Actions 触发能力。",
     "cover": "/blogs/cf-pages-github-cron/screenshot-framed.svg",
-    "hidden": false,
-    "category": "Cloudflare"
-  },
-  {
-    "slug": "cf-pages-ldcf0503",
-    "title": "ldcf0503：Cloudflare Pages 上的 nginx 占位入口",
-    "tags": [
-      "Cloudflare Pages",
-      "自定义域名",
-      "Web 前端"
-    ],
-    "date": "2026-05-05T00:00:00Z",
-    "summary": "已接入 Cloudflare Pages 和自定义域名的占位站点，当前公开页面仍是 nginx 默认欢迎页。",
-    "cover": "/blogs/cf-pages-ldcf0503/screenshot.png",
     "hidden": false,
     "category": "Cloudflare"
   },
@@ -43,17 +74,33 @@
   },
   {
     "slug": "glados-heckin-cloudflare",
-    "title": "GLaDOS Heckin Cloudflare：把签到任务放进 Workers Cron",
+    "title": "GLaDOS Heckin Cloudflare：边缘签到 Handler 与兑换策略",
     "tags": [
       "Cloudflare Workers",
       "Python",
-      "Cron"
+      "自动化",
+      "策略"
     ],
     "date": "2026-06-27T09:07:24Z",
-    "summary": "运行在 Cloudflare Workers Python 上的边缘定时任务，用 Cron 触发并通过 Secrets 管理敏感配置。",
+    "summary": "Cloudflare Python Workers 上的 GLaDOS 业务 Handler，负责签到、积分流水解析和兑换策略，并回传统一平台。",
     "cover": "/images/project/glados-cloudflare.svg",
     "hidden": false,
-    "category": "Cloudflare"
+    "category": "自动化"
+  },
+  {
+    "slug": "mihoyo-auto-checkin",
+    "title": "米游社自动签到：桌面扫码登录加云端多账号",
+    "tags": [
+      "TypeScript",
+      "Python",
+      "Cloudflare Workers",
+      "自动化"
+    ],
+    "date": "2026-06-25T12:00:00Z",
+    "summary": "Python 桌面端负责扫码登录，Cloudflare Worker 管理多账号签到，并作为统一调度平台的业务 Handler。",
+    "cover": "/images/project/mihoyo-checkin.svg",
+    "hidden": false,
+    "category": "自动化"
   },
   {
     "slug": "rainyun",
@@ -68,6 +115,35 @@
     "cover": "/images/project/rainyun.svg",
     "hidden": false,
     "category": "自动化"
+  },
+  {
+    "slug": "rocokingdom-egg",
+    "title": "异色生蛋助手：用约束优化自动生成配窝方案",
+    "tags": [
+      "算法",
+      "前端",
+      "可视化",
+      "HTML"
+    ],
+    "date": "2026-05-14T00:00:00Z",
+    "summary": "纯前端配种约束优化工具：兼容矩阵输入、唯一依赖优先、贪心覆盖和曼哈顿网格布局。",
+    "cover": "/images/project/rocokingdom-egg.svg",
+    "hidden": false,
+    "category": "算法工具"
+  },
+  {
+    "slug": "cf-pages-ldcf0503",
+    "title": "ldcf0503：Cloudflare Pages 上的 nginx 占位入口",
+    "tags": [
+      "Cloudflare Pages",
+      "自定义域名",
+      "Web 前端"
+    ],
+    "date": "2026-05-05T00:00:00Z",
+    "summary": "已接入 Cloudflare Pages 和自定义域名的占位站点，当前公开页面仍是 nginx 默认欢迎页。",
+    "cover": "/blogs/cf-pages-ldcf0503/screenshot.png",
+    "hidden": false,
+    "category": "Cloudflare"
   },
   {
     "slug": "cloudpaste",
@@ -124,6 +200,20 @@
     "cover": "/images/project/f-sweep.svg",
     "hidden": false,
     "category": "Minecraft"
+  },
+  {
+    "slug": "pocket-ledger-ios",
+    "title": "PocketLedger：离线记账和月度统计的 iOS 小品",
+    "tags": [
+      "SwiftUI",
+      "iOS",
+      "数据统计"
+    ],
+    "date": "2026-02-24T00:00:00Z",
+    "summary": "SwiftUI 离线记账应用，支持分类统计、月度结余和近六月趋势，并可通过 Actions 构建 IPA。",
+    "cover": "/images/project/pocket-ledger.svg",
+    "hidden": false,
+    "category": "移动应用"
   },
   {
     "slug": "cf-pages-safhkujsahk",

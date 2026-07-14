@@ -1,0 +1,14 @@
+{
+  "title": "checkin-cron-worker：把分散签到收成统一调度平台",
+  "tags": [
+    "Cloudflare Workers",
+    "TypeScript",
+    "D1",
+    "调度平台"
+  ],
+  "date": "2026-07-10T11:02:00Z",
+  "summary": "Cloudflare Workers 上的任务调度与 Webhook 聚合平台，用 D1 管理状态，把多业务结果汇总成企业微信日报。",
+  "cover": "/images/project/checkin-cron-worker.svg",
+  "hidden": false,
+  "category": "平台工程"
+}

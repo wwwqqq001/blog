@@ -1,0 +1,13 @@
+{
+  "title": "PocketLedger：离线记账和月度统计的 iOS 小品",
+  "tags": [
+    "SwiftUI",
+    "iOS",
+    "数据统计"
+  ],
+  "date": "2026-02-24T00:00:00Z",
+  "summary": "SwiftUI 离线记账应用，支持分类统计、月度结余和近六月趋势，并可通过 Actions 构建 IPA。",
+  "cover": "/images/project/pocket-ledger.svg",
+  "hidden": false,
+  "category": "移动应用"
+}

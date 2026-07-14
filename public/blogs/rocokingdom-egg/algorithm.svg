@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">配窝算法示意</title>
+  <desc id="desc">兼容矩阵输入，唯一依赖锁定，贪心覆盖，曼哈顿网格布局输出。</desc>
+  <rect width="960" height="520" rx="32" fill="#fff7ed"/>
+  <text x="56" y="64" fill="#9a3412" font-size="32" font-family="Arial, sans-serif" font-weight="700">约束优化三步走</text>
+  <text x="56" y="100" fill="#c2410c" font-size="17" font-family="Arial, sans-serif">输入是兼容表和库存，输出是雄性分配方案和 7x7 可放置布局。</text>
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="700">
+    <rect x="56" y="170" width="190" height="120" rx="18" fill="#fdba74"/>
+    <text x="90" y="225" fill="#7c2d12">CSV 兼容表</text>
+    <text x="90" y="255" fill="#9a3412" font-size="14" font-weight="500">邻接矩阵输入</text>
+    <rect x="290" y="170" width="190" height="120" rx="18" fill="#fb923c"/>
+    <text x="320" y="220" fill="#7c2d12">唯一依赖</text>
+    <text x="320" y="250" fill="#9a3412" font-size="14" font-weight="500">优先锁定雄性</text>
+    <rect x="524" y="170" width="190" height="120" rx="18" fill="#f97316"/>
+    <text x="560" y="220" fill="#fff7ed">贪心覆盖</text>
+    <text x="560" y="250" fill="#ffedd5" font-size="14" font-weight="500">防闲置裁剪</text>
+    <rect x="758" y="170" width="150" height="120" rx="18" fill="#ea580c"/>
+    <text x="790" y="220" fill="#fff7ed">网格布局</text>
+    <text x="790" y="250" fill="#ffedd5" font-size="14" font-weight="500">曼哈顿距离</text>
+  </g>
+  <g stroke="#9a3412" stroke-width="4" fill="none">
+    <path d="M246 230h44"/>
+    <path d="M480 230h44"/>
+    <path d="M714 230h44"/>
+  </g>
+  <rect x="330" y="340" width="280" height="140" rx="12" fill="#ffedd5" stroke="#c2410c" stroke-width="1.5"/>
+  <g fill="#f97316">
+    <circle cx="390" cy="390" r="12"/>
+    <circle cx="450" cy="390" r="12"/>
+    <circle cx="510" cy="430" r="12"/>
+    <circle cx="420" cy="450" r="12"/>
+  </g>
+  <text x="330" y="500" fill="#9a3412" font-size="15" font-family="Arial, sans-serif">纯前端本地计算，不上传宠物数据。</text>
+</svg>

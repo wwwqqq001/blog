@@ -1,0 +1,14 @@
+{
+  "title": "异色生蛋助手：用约束优化自动生成配窝方案",
+  "tags": [
+    "算法",
+    "前端",
+    "可视化",
+    "HTML"
+  ],
+  "date": "2026-05-14T00:00:00Z",
+  "summary": "纯前端配种约束优化工具：兼容矩阵输入、唯一依赖优先、贪心覆盖和曼哈顿网格布局。",
+  "cover": "/images/project/rocokingdom-egg.svg",
+  "hidden": false,
+  "category": "算法工具"
+}

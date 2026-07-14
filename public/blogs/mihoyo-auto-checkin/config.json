@@ -1,0 +1,14 @@
+{
+  "title": "米游社自动签到：桌面扫码登录加云端多账号",
+  "tags": [
+    "TypeScript",
+    "Python",
+    "Cloudflare Workers",
+    "自动化"
+  ],
+  "date": "2026-06-25T12:00:00Z",
+  "summary": "Python 桌面端负责扫码登录，Cloudflare Worker 管理多账号签到，并作为统一调度平台的业务 Handler。",
+  "cover": "/images/project/mihoyo-checkin.svg",
+  "hidden": false,
+  "category": "自动化"
+}

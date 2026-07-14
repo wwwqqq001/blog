@@ -1,0 +1,14 @@
+{
+  "title": "Hyperdown Workers：把签到做成可观测边缘服务",
+  "tags": [
+    "Cloudflare Workers",
+    "Python",
+    "KV",
+    "自动化"
+  ],
+  "date": "2026-07-05T11:38:00Z",
+  "summary": "运行在 Cloudflare Python Workers 上的 Hyperdown 签到 Handler，带可视化面板、KV 状态和平台标准回传。",
+  "cover": "/images/project/hyper-checkin.svg",
+  "hidden": false,
+  "category": "自动化"
+}
